@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Book List</title>
+    <script src="book.js"></script>
+    <h1>Daniel Haile</h1>
+    <h2>Book list assignment</h2>
+    <hr>
+    <style>
+        textarea {
+            border-radius: 10px;
+            border-color: hsl(231, 100%, 66%);
+        }
+        
+        button {
+            color: rgb(134, 11, 11);
+        }
+        
+        input {
+            color: rgb(19, 19, 163);
+        }
+        
+        h1,
+        h2 {
+            color: rgb(17, 17, 180);
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    Book Title
+    <br>
+    <input type="text" id="title" size="90" />
+    <br> Author
+    <br>
+    <input type="text" id="author" size="90">
+    <br> Library Id
+    <br>
+    <input type="text" id="id" size="90">
+    <br>
+    <button type="button" onclick="bookLibrary()">Show book library</button>
+    <button type="button" onmouseover="showTitles()">Show title</button>
+    <button type="button" onmouseover="showAuthor()">Show author</button>
+    <button type="button" onmouseover="libraryId()">Show IDs</button>
+
+    <p id="demo"> </p>
+
+    <div>
+        <textarea id="displayArea" rows="10" cols="80"></textarea>
+
+    </div>
+
+</body>
+
+</html>
